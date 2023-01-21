@@ -33,7 +33,7 @@ const addManager = () => {
             name: 'email',
             message: 'Please enter their email.',
             validate: email => {
-                valid = /^[^@]+@[^@]+\.[a-z]+$/itest(email) || (console.log ("Please enter an email"), false)
+                valid = /^[^@]+@[^@]+\.[a-z]+$/i.test(email) || (console.log ("Please enter an email"), false)
             }
         },
         {
