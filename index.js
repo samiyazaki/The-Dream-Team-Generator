@@ -31,9 +31,15 @@ const addManager = () => {
         {
             type: 'input',
             name: 'email',
-            message: 'Please enter their email.',
+            message: "Please enter the employee's email.",
             validate: email => {
-                valid = /^[^@]+@[^@]+\.[a-z]+$/i.test(email) || (console.log ("Please enter an email"), false)
+                const valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+                if (valid) {
+                    return true;
+                } else {
+                    console.log ('Please enter an email!');
+                    return false; 
+                }
             }
         },
         {
@@ -52,7 +58,7 @@ const addManager = () => {
         console.log(manager);
     })
 };
-const addEmployee = async () => {
+const addEmployee =  () => {
     console.log(`
         -------------------------------
         Adding an Employee as requested
@@ -60,7 +66,7 @@ const addEmployee = async () => {
     `);
     let employeeData;
     while(true){
-        employeeData = await inquirer.prompt([
+        employeeData =  inquirer.prompt([
             {
                 type: 'list',
                 name: 'role',
