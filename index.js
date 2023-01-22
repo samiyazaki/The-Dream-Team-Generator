@@ -1,12 +1,12 @@
-const generateHTML = require("./src/generateHTML");
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const inquirer = require("inquirer");
-const fs = require("fs");
+const generateHTML = require("./src/generateHTML"); //Requires and pulls the exported generateHTML page
+const Manager = require("./lib/Manager"); //This pulls the Manager card data script
+const Engineer = require("./lib/Engineer"); //This pulls the Engineer card data script
+const Intern = require("./lib/Intern"); //This pulls the Intern card data script
+const inquirer = require("inquirer"); //This is to intitalize the inquirer prompts
+const fs = require("fs"); //This calls the file system node module
 
 const teamArray = [];
-
+//This is the 
 const addManager = () => {
     return inquirer.prompt ([
         {

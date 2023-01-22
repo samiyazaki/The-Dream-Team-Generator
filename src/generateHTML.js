@@ -1,4 +1,5 @@
-const generateManager = function (manager) {
+// Here is where we create the Manager card
+const generateManager = function (manager) { 
   return `
     <div class="col-4 mt-4">
         <div class="card h-100 manager">
@@ -16,7 +17,7 @@ const generateManager = function (manager) {
     `;
 };
 
-// create Engineer card
+// Here is where we create the Engineer card
 const generateEngineer = function (engineer) {
   return `
     <div class="col-4 mt-4">
@@ -35,7 +36,7 @@ const generateEngineer = function (engineer) {
 `;
 };
 
-// create Intern card
+// Here is where we create the Intern card
 const generateIntern = function (intern) {
   return `
     <div class="col-md-4 mt-4">
@@ -53,30 +54,30 @@ const generateIntern = function (intern) {
     `;
 };
 
-// push array to page
+// Here we send the input data to the generateHTML 
 const generateHTML = (data) => {
-    // array for cards
+    // Time to set up the cards
     let pageArray = [];
-  
+    // Now we set up the employee roles
     for (let i = 0; i < data.length; i++) {
       const employee = data[i];
       const role = employee.getRole();
   
-      // call manager function
+      // Manager role check
       if (role === "Manager") {
         const managerCard = generateManager(employee);
   
         pageArray.push(managerCard);
       }
   
-      // call engineer function
+      // Engineer role check
       if (role === "Engineer") {
         const engineerCard = generateEngineer(employee);
   
         pageArray.push(engineerCard);
       }
   
-      // call intern function
+      // Intern role check
       if (role === "Intern") {
         const internCard = generateIntern(employee);
   
@@ -84,15 +85,15 @@ const generateHTML = (data) => {
       }
     }
   
-    // joining strings
+    // This combines the various employee data strings together
     const employeeCards = pageArray.join("");
   
-    // return to generated page
+    // This sets the various members to the team page
     const generateTeam = generateTeamPage(employeeCards);
     return generateTeam;
   };
   
-  // generate html page
+  // Now we generate the team page based off of the various cards
   const generateTeamPage = function (employeeCards) {
     return `
     <!DOCTYPE html>
@@ -129,5 +130,5 @@ const generateHTML = (data) => {
   
   
 
-// export to index
+// This exports the generateHTML script to be called in the index.js page
 module.exports = generateHTML;
