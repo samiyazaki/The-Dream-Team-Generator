@@ -5,7 +5,7 @@ const generateManager = function (manager) {
         <div class="card h-100 manager">
             <div class="card-header">
                 <h3 class = "card-title">${manager.name}</h3>
-                <h4 class = "card-subtitle mb-2 text-muted">Manager</h4>
+                <h4 class = "card-subtitle">Manager</h4>
             </div>
             <div class="card-body">
                 <p class="card-text">ID: ${manager.id}</p>
@@ -24,7 +24,7 @@ const generateEngineer = function (engineer) {
     <div class="card h-100">
         <div class="card-header">
             <h3 class="card-title">${engineer.name}</h3>
-            <h4 class="card-subtitle mb-2 text-muted">Engineer</h4>
+            <h4 class="card-subtitle">Engineer</h4>
         </div>
         <div class="card-body">
             <p class="card-text">ID: ${engineer.id}</p>
@@ -43,11 +43,11 @@ const generateIntern = function (intern) {
         <div class="card h-100">
             <div class="card-header text-center">
                 <h3>${intern.name}</h3>
-                <h4 class="card-subtitle mb-2 text-muted">Intern</h4> </div> 
+                <h4 class="card-subtitle">Intern</h4> </div> 
                 <div class="card-body"> 
-                <p class="card-text text-center">ID: ${intern.id}</p> 
-                <p class="card-text text-center">Email: <a href="mailto:${intern.email}">${intern.email}</a></p> 
-                <p class="card-text text-center">School: ${intern.school}</p>
+                <p class="card-text">ID: ${intern.id}</p> 
+                <p class="card-text">Email: <a href="mailto:${intern.email}">${intern.email}</a></p> 
+                <p class="card-text">School: ${intern.school}</p>
             </div>
     </div>
 </div>
@@ -107,8 +107,8 @@ const generateHTML = (data) => {
         </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Team Profile</a>
+            <nav class="navbar">
+                <div class="navbar-brand">Team Profile</a>
             </nav>
         </header>
         <main>
