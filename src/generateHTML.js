@@ -4,7 +4,7 @@ const generateManager = function (manager) {
         <div class="card h-100 manager">
             <div class="card-header">
                 <h3 class = "card-title">${manager.name}</h3>
-                <h4 class = "card-subtitle" mb-2 text-muted>Manager</h4>
+                <h4 class = "card-subtitle mb-2 text-muted">Manager</h4>
             </div>
             <div class="card-body">
                 <p class="card-text">ID: ${manager.id}</p>
@@ -42,7 +42,7 @@ const generateIntern = function (intern) {
         <div class="card h-100">
             <div class="card-header text-center">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4> </div> 
+                <h4 class="card-subtitle mb-2 text-muted">Intern</h4> </div> 
                 <div class="card-body"> 
                 <p class="card-text text-center">ID: ${intern.id}</p> 
                 <p class="card-text text-center">Email: <a href="mailto:${intern.email}">${intern.email}</a></p> 
