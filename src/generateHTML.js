@@ -1,7 +1,7 @@
 const generateManager = function (manager) {
   return `
     <div class="col-4 mt-4">
-        <div class="card h-100">
+        <div class="card h-100 manager">
             <div class="card-header">
                 <h3 class = "card-title">${manager.name}</h3>
                 <h4 class = "card-subtitle" mb-2 text-muted>Manager</h4>
@@ -102,7 +102,8 @@ const generateHTML = (data) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    </head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
