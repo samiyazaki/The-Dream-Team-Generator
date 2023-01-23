@@ -21,6 +21,7 @@
     box-sizing: border-box;
   }
   
+  
   .container {
    
     
@@ -102,9 +103,11 @@
   .navbar {
     justify-content: center;
     width: 100%;
-    color:#ffffff
+    color:#ffffff;
   }
-
+  .large-text {
+    font-size: 50px;
+  }
 /* 
 body {
   background-color: grey;

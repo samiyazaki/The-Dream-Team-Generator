@@ -101,19 +101,19 @@ const generateTeamPage = function (employeeCards) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Team Profile</title>
+        <title>The Dream Team</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         </head>
     <body>
         <header>
             <nav class="navbar">
-                <div class="navbar-brand">Team Profile</a>
+                <div class="navbar-brand text-large">Team Profile</a>
             </nav>
         </header>
         <main>
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <!--Team Cards-->
                     ${employeeCards}
                 </div>
