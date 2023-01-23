@@ -20,8 +20,12 @@
     padding-bottom: 2rem;
     box-sizing: border-box;
   }
-  
-  
+/*   
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
   .card {
     background: #191c29;
     width: var(--card-width);
@@ -37,6 +41,8 @@
     color: whitesmoke;
     cursor: pointer;
     font-family: cursive;
+    margin: 1rem;
+    flex: 1 0 20%;
   }
   
   .card:hover {
@@ -96,6 +102,7 @@
   .navbar {
     justify-content: center;
     width: 100%;
+    color:#ffffff
   }
 
 /* 
