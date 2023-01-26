@@ -108,7 +108,7 @@ const generateTeamPage = function (employeeCards) {
     <body>
         <header>
             <nav class="navbar">
-                <div class="navbar-brand text-large">Team Profile</a>
+                <div class="navbar">Team Profile</a>
             </nav>
         </header>
         <main>
