@@ -7,7 +7,12 @@
 
 - 🔭 I'm currently working on [The-Dream-Team-Generator](https://github.com/samiyazaki/The-Dream-Team-Generator)
 <img src="./assets/The Dream Team.gif" alt="GIF of a website wher eyou can input information about your team of developers and create cards thatdisplay the information in a cool format"></a>
-
+## This is a build focused on allowing a team manager to input information about their team members using command line prompts and then generate an HTML file with cards that display information about each team member
+## The user can input the managers name, Employee ID number, their email address and their office number. Then the user can select between two employee types; Engineer and Intern.
+## When the user selects the Engineer they then input the employee number, their email address and their GitHub username.
+## When the user selects the Intern they then input the employee number, their email and the university they attend. 
+## Finally, when the user is done they select No and the index.html file is generated. It is sent to the dist file where I have a style.CSS file available to make the HTML more unique
+## There are also Jest Tests in the _tests_ folder that allow the user to run "npm test" from the command line and run 4 separate tests for the card types and determine if the script is functional.
 - 🌱 I'm currently learning **javaScript, node, inquirer, markdown and Express**
 
 - 👯 I’m looking to collaborate on [Take_A_Walk](https://github.com/samiyazaki/Take_A_Walk)
